@@ -1,0 +1,39 @@
+
+
+/* Mixin for contact button */
+
+// mixins.scss
+
+
+@use 'sass:math';
+
+@mixin contact-button ($bg-color, $hover-color) {
+  margin-top: 30px;
+  background-color: $bg-color;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+
+@include contact-button(-color, -color)
+
+.send-btn {
+ background-color: $primary-color;
+ color: #fff;
+ border: none;
+ padding: $input-padding * 2 $input-padding;
+ border-radius: $border-radius;
+ cursor: pointer;
+
+ &:hover {
+   background-color: $cutecolor;
+ }
+}
